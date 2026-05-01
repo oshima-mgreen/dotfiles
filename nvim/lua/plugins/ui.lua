@@ -9,7 +9,13 @@ return {
 		},
 		config = function()
 			require("neo-tree").setup({
-				window = { width = 30 },
+				window = {
+					width = 30,
+					mappings = {
+						["l"] = "open",
+						["h"] = "close_node",
+					},
+				},
 				filesystem = {
 					filtered_items = {
 						hide_dotfiles = false,  -- dotfilesも表示
