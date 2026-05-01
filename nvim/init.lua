@@ -18,5 +18,8 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.termguicolors = true
 
+-- キーマップ
+vim.keymap.set("i", "jk", "<Esc>", { desc = "ノーマルモードに戻る" })
+
 -- プラグイン読み込み
 require("lazy").setup("plugins")
