@@ -17,6 +17,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.termguicolors = true
+vim.opt.clipboard = "unnamedplus"
 
 -- キーマップ
 vim.keymap.set("i", "jk", "<Esc>", { desc = "ノーマルモードに戻る" })
